@@ -56,3 +56,7 @@ $response = $kernel->handle(
 $response->send();
 
 $kernel->terminate($request, $response);
+
+// Affiche toutes les informations, comme le ferait INFO_ALL
+phpinfo();
+
