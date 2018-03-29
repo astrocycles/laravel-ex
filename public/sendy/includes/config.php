@@ -4,7 +4,7 @@
 	//----------------------------------------------------------------------------------//
 	
 	/*  Set the URL to your Sendy installation (without the trailing slash) */
-	define('APP_PATH', 'http://localhost:8888/sendy');
+	define('APP_PATH', 'http://laravel-mysql-persistent-sendy-mautic.7e14.starter-us-west-2.openshiftapps.com/sendy');
 	
 	/*  MySQL database connection credentials (please place values between the apostrophes) */
 	$dbHost = 'localhost'; //MySQL Hostname
