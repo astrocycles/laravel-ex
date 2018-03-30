@@ -60,10 +60,44 @@ $kernel->terminate($request, $response);
 // Affiche toutes les informations, comme le ferait INFO_ALL
 phpinfo();
 
-// on se connect à localhost au port 3306
-$link = mysql_connect('127.0.0.1:3306', 'root', '');
-if (!$link) {
-    die('Connexion impossible : ' . mysql_error());
+
+// test acces base pdo et mysqli
+
+// $q = 'SELECT * FROM apps WHERE userID = '.get_app_info('userID').' ORDER BY app_name ASC';
+// 	$r = mysqli_query($mysqli, $q);
+// 
+?>
+
+
+<?php
+try
+{
+	// On se connecte à MySQL
+	$bdd = new PDO('mysql:host=localhost;dbname=my_laravelDB;charset=utf8', 'root', '');
 }
-echo 'Connecté correctement';
-mysql_close($link);
+catch(Exception $e)
+{
+	// En cas d'erreur, on affiche un message et on arrête tout
+        die('Erreur : '.$e->getMessage());
+}
+
+// Si tout va bien, on peut continuer
+
+// On récupère tout le contenu de la table jeux_video
+$reponse = $bdd->query('SELECT * FROM test');
+
+// On affiche chaque entrée une à une
+while ($donnees = $reponse->fetch())
+{
+?>
+    <p>
+    <strong>TEST</strong> : <?php echo $donnees['ID']; ?><br />
+    Le nom est : <?php echo $donnees['name']; ?>
+    </p>
+
+<?php
+}
+
+$reponse->closeCursor(); // Termine le traitement de la requête
+
+?>
