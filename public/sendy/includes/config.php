@@ -7,7 +7,7 @@
 	define('APP_PATH', 'http://laravel-mysql-persistent-sendy-mautic.7e14.starter-us-west-2.openshiftapps.com/sendy');
 	
 	/*  MySQL database connection credentials (please place values between the apostrophes) */
-	$dbHost = 'localhost'; //MySQL Hostname
+	$dbHost = '10.131.64.6'; //MySQL Hostname
 	$dbUser = 'root'; //MySQL Username
 	$dbPass = ''; //MySQL Password
 	$dbName = 'my_sendy'; //MySQL Database Name
