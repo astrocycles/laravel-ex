@@ -57,8 +57,7 @@ $response->send();
 
 $kernel->terminate($request, $response);
 
-// Affiche toutes les informations, comme le ferait INFO_ALL
-phpinfo();
+
 
 
 // test acces base pdo et mysqli
@@ -99,5 +98,9 @@ while ($donnees = $reponse->fetch())
 }
 
 $reponse->closeCursor(); // Termine le traitement de la requête
+
+
+// Affiche toutes les informations, comme le ferait INFO_ALL
+phpinfo();
 
 ?>
