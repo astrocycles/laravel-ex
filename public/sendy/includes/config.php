@@ -8,8 +8,8 @@
 	
 	/*  MySQL database connection credentials (please place values between the apostrophes) */
 	$dbHost = 'localhost'; //MySQL Hostname
-	$dbUser = 'laravel'; //MySQL Username
-	$dbPass = 'hoflEGJO05yB25lJ'; //MySQL Password
+	$dbUser = 'root'; //MySQL Username
+	$dbPass = ''; //MySQL Password
 	$dbName = 'my_sendy'; //MySQL Database Name
 	
 	
