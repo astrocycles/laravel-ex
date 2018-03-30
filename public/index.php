@@ -60,3 +60,10 @@ $kernel->terminate($request, $response);
 // Affiche toutes les informations, comme le ferait INFO_ALL
 phpinfo();
 
+// on se connect à localhost au port 3306
+$link = mysql_connect('127.0.0.1:3306', 'root', '');
+if (!$link) {
+    die('Connexion impossible : ' . mysql_error());
+}
+echo 'Connecté correctement';
+mysql_close($link);
