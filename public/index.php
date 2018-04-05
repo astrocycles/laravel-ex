@@ -72,7 +72,7 @@ $kernel->terminate($request, $response);
 try
 {
 	// On se connecte à MySQL
-	$bdd = new PDO('mysql:host=localhost;dbname=my_laravelDB;charset=utf8', 'root', '');
+	$bdd = new PDO('mysql:host=172.30.2.126;dbname=my_sendy;charset=utf8', 'root', '');
 }
 catch(Exception $e)
 {
