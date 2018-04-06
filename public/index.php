@@ -72,7 +72,7 @@ $kernel->terminate($request, $response);
 try
 {
 	// On se connecte à MySQL
-	$bdd = new PDO('mysql:host=172.30.2.126;dbname=my_sendy;charset=utf8', 'root', '');
+	$bdd = new PDO('mysql:host=172.30.2.126;dbname=default;charset=utf8', 'laravel', 'hoflEGJO05yB25lJ');
 }
 catch(Exception $e)
 {
@@ -90,7 +90,7 @@ while ($donnees = $reponse->fetch())
 {
 ?>
     <p>
-    <strong>TEST</strong> : <?php echo $donnees['ID']; ?><br />
+    <strong>TEST</strong> : <?php echo $donnees['id']; ?><br />
     Le nom est : <?php echo $donnees['name']; ?>
     </p>
 

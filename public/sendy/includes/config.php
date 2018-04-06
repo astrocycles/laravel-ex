@@ -8,9 +8,9 @@
 	
 	/*  MySQL database connection credentials (please place values between the apostrophes) */
 	$dbHost = '172.30.2.126'; //MySQL Hostname
-	$dbUser = 'root'; //MySQL Username
-	$dbPass = ''; //MySQL Password
-	$dbName = 'my_sendy'; //MySQL Database Name
+	$dbUser = 'laravel'; //MySQL Username
+	$dbPass = 'hoflEGJO05yB25lJ'; //MySQL Password
+	$dbName = 'default'; //MySQL Database Name
 	
 	
 	//----------------------------------------------------------------------------------//	
